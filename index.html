@@ -257,6 +257,93 @@
         </div>
       </div>
     </section>
+
+    <section class="forms" id="formularios">
+      <div class="container">
+        <div class="section-title">
+          <span>Formulários de captação</span>
+          <h2>Cadastre seu interesse.</h2>
+          <p>
+            Os dados serão organizados para facilitar o contato com voluntários, doadores, pesquisadores e visitantes.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="form-tabs">
+            <button class="tab-button active" type="button">Doador</button>
+            <button class="tab-button" type="button">Voluntário</button>
+            <button class="tab-button" type="button">Pesquisador</button>
+            <button class="tab-button" type="button">Visitante</button>
+          </div>
+
+          <form>
+            <div class="field">
+              <label for="perfil">Perfil de interesse</label>
+              <select id="perfil" name="perfil" required>
+                <option>Doador</option>
+                <option>Voluntário</option>
+                <option>Pesquisador</option>
+                <option>Visitante</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" placeholder="Ex.: Ana Souza" required />
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required />
+            </div>
+
+            <div class="field">
+              <label for="cep">CEP</label>
+              <input id="cep" name="cep" type="text" placeholder="00000-000" maxlength="9" required />
+            </div>
+
+            <div class="field">
+              <label for="logradouro">Logradouro</label>
+              <input id="logradouro" name="logradouro" type="text" readonly />
+            </div>
+
+            <div class="field">
+              <label for="bairro">Bairro</label>
+              <input id="bairro" name="bairro" type="text" readonly />
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input id="cidade" name="cidade" type="text" readonly />
+            </div>
+
+            <div class="field">
+              <label for="uf">UF</label>
+              <input id="uf" name="uf" type="text" readonly />
+            </div>
+
+            <div class="field">
+              <label for="numero">Número</label>
+              <input id="numero" name="numero" type="text" placeholder="Ex.: 120" />
+            </div>
+
+            <div class="field full">
+              <label for="mensagem">Mensagem ou área de interesse</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte como você deseja apoiar o Instituto Macacoverso."></textarea>
+            </div>
+
+            <div class="field full">
+              <button class="btn btn-primary" type="submit">Enviar cadastro</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>

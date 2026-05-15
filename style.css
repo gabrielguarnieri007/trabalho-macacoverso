@@ -403,6 +403,91 @@ section {
   color: var(--cinza);
 }
 
+.forms {
+  background: var(--verde-escuro);
+  color: var(--branco);
+}
+
+.forms .section-title h2,
+.forms .section-title span {
+  color: var(--branco);
+}
+
+.form-wrapper {
+  background: var(--branco);
+  color: #1f2a24;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--sombra);
+}
+
+.form-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tab-button {
+  border: 1px solid #cbd9cf;
+  background: #f7faf8;
+  color: var(--verde-escuro);
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.tab-button.active {
+  background: var(--verde);
+  color: var(--branco);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 800;
+  color: var(--verde-escuro);
+  font-size: 0.92rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid #cbd9cf;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 3px rgba(47, 111, 78, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
 footer {
   background: #0f281e;
   color: #dbe8df;
