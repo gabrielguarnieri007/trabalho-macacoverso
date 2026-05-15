@@ -6,6 +6,7 @@
   --cinza: #5f6b63;
   --cinza-claro: #f5f7f4;
   --branco: #ffffff;
+  --erro: #b3261e;
   --sombra: 0 12px 30px rgba(0, 0, 0, 0.12);
   --radius: 18px;
 }
@@ -486,6 +487,21 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 110px;
+}
+
+.form-message {
+  grid-column: 1 / -1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
+  display: none;
+  font-weight: 700;
+}
+
+.form-message.error {
+  background: #fdecea;
+  color: var(--erro);
 }
 
 footer {

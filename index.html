@@ -270,13 +270,13 @@
 
         <div class="form-wrapper">
           <div class="form-tabs">
-            <button class="tab-button active" type="button">Doador</button>
-            <button class="tab-button" type="button">Voluntário</button>
-            <button class="tab-button" type="button">Pesquisador</button>
-            <button class="tab-button" type="button">Visitante</button>
+            <button class="tab-button active" type="button" data-profile="Doador">Doador</button>
+            <button class="tab-button" type="button" data-profile="Voluntário">Voluntário</button>
+            <button class="tab-button" type="button" data-profile="Pesquisador">Pesquisador</button>
+            <button class="tab-button" type="button" data-profile="Visitante">Visitante</button>
           </div>
 
-          <form>
+          <form id="leadForm">
             <div class="field">
               <label for="perfil">Perfil de interesse</label>
               <select id="perfil" name="perfil" required>
@@ -337,8 +337,10 @@
               <textarea id="mensagem" name="mensagem" placeholder="Conte como você deseja apoiar o Instituto Macacoverso."></textarea>
             </div>
 
+            <div class="form-message" id="formMessage"></div>
+
             <div class="field full">
-              <button class="btn btn-primary" type="submit">Enviar cadastro</button>
+              <button class="btn btn-primary" type="submit">Enviar cadastro estruturado</button>
             </div>
           </form>
         </div>
