@@ -3,6 +3,7 @@
   --verde: #2f6f4e;
   --verde-claro: #e7f3ec;
   --dourado: #d7a84f;
+  --cinza: #5f6b63;
   --cinza-claro: #f5f7f4;
   --branco: #ffffff;
   --sombra: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -312,6 +313,62 @@ section {
   display: grid;
   place-items: center;
   font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.conservation {
+  background: #edf5ef;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.animal-card {
+  overflow: hidden;
+  background: var(--branco);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.animal-img {
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+}
+
+.animal-1 {
+  background-image: url("https://images.unsplash.com/photo-1516636052745-e142aecffd0c?auto=format&fit=crop&w=900&q=80");
+}
+
+.animal-2 {
+  background-image: url("https://images.unsplash.com/photo-1522555975300-67c8d1894a50?auto=format&fit=crop&w=900&q=80");
+}
+
+.animal-3 {
+  background-image: url("https://images.unsplash.com/photo-1545125116-9483cf79612c?auto=format&fit=crop&w=900&q=80");
+}
+
+.animal-content {
+  padding: 22px;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
+}
+
+.taxonomy {
+  color: var(--cinza);
+  font-style: italic;
   margin-bottom: 12px;
 }
 
